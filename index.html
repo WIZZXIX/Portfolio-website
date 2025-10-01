@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section>
+      <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div
+          class="container mx-auto flex justify-between items-center py-4 px-6"
+        >
+          <!-- Logo -->
+          <div class="text-2xl font-bold">
+            Suchit <span class="text-red-600">.</span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex space-x-8 font-medium">
+            <li>
+              <a href="#about" class="hover:text-red-600 transition">About</a>
+            </li>
+            <li>
+              <a href="#skills" class="hover:text-red-600 transition">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="hover:text-red-600 transition"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-red-600 transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Hamburger / Cross Icon (Mobile) -->
+          <button id="menu-btn" class="md:hidden focus:outline-none">
+            <!-- Hamburger Icon -->
+            <svg
+              id="menu-icon"
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!-- Cross Icon (hidden by default) -->
+            <svg
+              id="close-icon"
+              class="hidden w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+          <ul class="flex flex-col space-y-4 p-6 font-medium text-center">
+            <li>
+              <a href="#about" class="block hover:text-red-600 transition"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="block hover:text-red-600 transition"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="block hover:text-red-600 transition"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="block hover:text-red-600 transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section class="flex flex-col items-center text-center mt-30 px-6">
+      <img
+        src="Screenshot 2025-09-25 145207.png"
+        alt="profile-img"
+        class="w-32 h-32 rounded-full shadow-lg mb-3"
+      />
+      <p class="text-gray-600 text-[20px]">
+        Hi! I'm <span class="font-semibold">Suchit Manthen</span> 👋
+      </p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-snug mt-3">
+        full-stack web developer <br class="hidden md:block" />
+        based in <span class="text-indigo-600">Mumbai.</span>
+      </h1>
+      <p class="text-gray-500 text-[18px] max-w-2xl mt-4">
+        I am a full-stack developer from Mumbai, IN with experience in multiple
+        frameworks like
+        <span class="font-semibold">React, Next and Django</span>.
+      </p>
+      <div class="flex space-x-4 mt-6">
+        <a
+          href="resume.pdf"
+          download="Suchit_Resume.pdf"
+          class="border border-gray-400 px-6 py-3 rounded-full hover:bg-gray-700 hover:text-white transition"
+        >
+          my resume ⬇
+        </a>
+      </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="about">
+      <section class="text-center mb-16">
+        <p class="text-gray-500 text-lg mt-6">Introduction</p>
+        <h1 class="text-5xl font-bold mt-2">About me</h1>
+      </section>
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 lg:gap-20"
+      >
+        <div class="flex-shrink-0">
+          <div class="bg-gray-200 p-3.5 rounded-[30px] shadow-sm">
+            <img
+              class="w-72 h-auto rounded-[22px]"
+              src="Screenshot 2025-09-25 145207.png"
+              alt="profile-img"
+            />
+          </div>
+        </div>
+        <div class="max-w-xl flex-grow">
+          <p class="text-gray-600 text-base leading-relaxed mb-10">
+            I am a Full-stack Developer with experience in Frameworks like
+            React, Node and Django. I have had the privilege of collaborating
+            with prestigious organizations, contributing to their success and
+            growth.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-12">
+            <div
+              class="bg-white border border-gray-200/80 rounded-2xl p-5 shadow-sm"
+            >
+              <img
+                src="code-snippet-02-svgrepo-com.png"
+                alt="coding-language"
+                height="30"
+                width="30"
+              />
+              <h3 class="font-bold text-lg">Languages</h3>
+              <p class="text-gray-500 text-sm mt-1">
+                HTML, CSS, JavaScript<br />React Js, MongoDB, Node.Js and Django
+              </p>
+            </div>
+
+            <div
+              class="bg-white border border-gray-200/80 rounded-2xl p-5 shadow-sm"
+            >
+              <img
+                src="education-svgrepo-com.png"
+                alt="education"
+                height="30"
+                width="30"
+              />
+              <h3 class="font-bold text-lg">Education</h3>
+              <p class="text-gray-500 text-sm mt-1">
+                B.E in Artificial Intelligence and Machine Learning
+              </p>
+            </div>
+
+            <div
+              class="bg-white border border-gray-200/80 rounded-2xl p-5 shadow-sm"
+            >
+              <img
+                src="work-alt-bag-svgrepo-com.png"
+                alt="work-bag"
+                height="30"
+                width="30"
+              />
+              <h3 class="font-bold text-lg">Projects</h3>
+              <p class="text-gray-500 text-sm mt-1">
+                Built more than 5 projects
+              </p>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Tools I use</h2>
+            <div class="flex items-center gap-5">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                alt="Visual Studio Code"
+                class="h-10 w-10"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+                alt="Git"
+                class="h-10 w-10"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                alt="React"
+                class="h-10 w-10"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                alt="Node"
+                class="h-10 w-10"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+                alt="TailwindCSS"
+                class="h-10 w-10"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg"
+                alt="Django"
+                class="h-10 w-10"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+                class="h-10 w-10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="scroll-mt-20 max-w-3xl mx-auto my-10 px-6" id="skills">
+      <h2 class="text-5xl font-bold mt-2 text-center">My Skills</h2>
+
+      <!-- HTML -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span class="font-medium text-gray-700">HTML</span>
+          <span class="text-sm text-gray-500">90%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-green-500 h-4 rounded-full" style="width: 90%"></div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span class="font-medium text-gray-700">CSS</span>
+          <span class="text-sm text-gray-500">80%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-blue-500 h-4 rounded-full" style="width: 80%"></div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span class="font-medium text-gray-700">JavaScript</span>
+          <span class="text-sm text-gray-500">75%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-yellow-500 h-4 rounded-full" style="width: 75%"></div>
+        </div>
+      </div>
+
+      <!-- React.js -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span class="font-medium text-gray-700">React.js</span>
+          <span class="text-sm text-gray-500">70%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-cyan-500 h-4 rounded-full" style="width: 70%"></div>
+        </div>
+      </div>
+
+      <!-- Node.js -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span class="font-medium text-gray-700">Node.js</span>
+          <span class="text-sm text-gray-500">65%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-lime-600 h-4 rounded-full" style="width: 65%"></div>
+        </div>
+      </div>
+
+      <!-- Django -->
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <span class="font-medium text-gray-700">Django</span>
+          <span class="text-sm text-gray-500">60%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-gray-800 h-4 rounded-full" style="width: 60%"></div>
+        </div>
+      </div>
+
+      <!-- MongoDB -->
+      <div class="mb-7">
+        <div class="flex justify-between mb-1">
+          <span class="font-medium text-gray-700">MongoDB</span>
+          <span class="text-sm text-gray-500">55%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-emerald-600 h-4 rounded-full" style="width: 55%"></div>
+        </div>
+      </div>
+    </section>
+    <section class="scroll-mt-20 max-w-6xl mx-auto my-16 px-6" id="projects">
+      <h2 class="text-5xl font-bold mt-8 text-center mb-8">My Projects</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="pexels-goumbik-590022.jpg"
+            alt="Project 1"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Finance Flow</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              A finance tracker app to manage expenses, budgets, and bank
+              statement analysis with AI integration.
+            </p>
+            <a
+              href="https://github.com/yourusername/finance-flow"
+              target="_blank"
+              class="inline-block px-4 py-2 bg-gray-900 text-white text-sm rounded-lg hover:bg-gray-700 transition"
+            >
+              🔗 GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="pexels-rdne-6647010.jpg"
+            alt="Project 2"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">NGO Management System</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              A web platform where admins can post NGO drives and volunteers can
+              register and track participation.
+            </p>
+            <a
+              href="https://github.com/yourusername/ngo-management"
+              target="_blank"
+              class="inline-block px-4 py-2 bg-gray-900 text-white text-sm rounded-lg hover:bg-gray-700 transition"
+            >
+              🔗 GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="pexels-bertellifotografia-30530423.jpg"
+            alt="Project 3"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">AI Chatbot</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Multilingual chatbot for answering groundwater queries, built for
+              the Smart India Hackathon.
+            </p>
+            <a
+              href="https://github.com/yourusername/ai-chatbot"
+              target="_blank"
+              class="inline-block px-4 py-2 bg-gray-900 text-white text-sm rounded-lg hover:bg-gray-700 transition"
+            >
+              🔗 GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-20 bg-gray-100 py-12 px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-600 mb-8">
+          Got a question or want to work together? Fill out the form below!
+        </p>
+
+        <!-- Contact Form -->
+        <form
+          action="https://formsubmit.co/YOUR_EMAIL_HERE"
+          method="POST"
+          class="space-y-4"
+        >
+          <!-- Name -->
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+          />
+
+          <!-- Email -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+          />
+
+          <!-- Message -->
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+            class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+
+          <!-- Hidden Settings for FormSubmit -->
+          <input type="hidden" name="_captcha" value="false" />
+          <!-- disables captcha -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourwebsite.com/thanks.html"
+          />
+          <!-- redirect after submit -->
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+          >
+            Send Message 🚀
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden"); // hide hamburger
+        closeIcon.classList.toggle("hidden"); // show cross
+      });
+    </script>
+  </body>
+</html>
