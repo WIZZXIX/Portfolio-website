@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-A modern, responsive **portfolio website** built using **HTML**, **Tailwind CSS**, and **vanilla JavaScript** to showcase my projects, skills, and personal information in a clean and professional layout.
+A modern, responsive **portfolio website** built using **HTML**, and **Tailwind CSS**, to showcase my projects, skills, and personal information in a clean and professional layout.
 
 ---
 
@@ -18,27 +18,11 @@ A modern, responsive **portfolio website** built using **HTML**, **Tailwind CSS*
 
 ## 🧩 Tech Stack
 
-| Technology               | Purpose                          |
-| ------------------------ | -------------------------------- |
-| **HTML5**                | Structure and content            |
-| **Tailwind CSS**         | Styling and layout               |
-| **JavaScript (Vanilla)** | Interactive mobile menu toggle   |
-| **FormSubmit**           | Handles contact form submissions |
-
----
-
-## 📁 Folder Structure
-
-📂 Portfolio/
-│
-├── index.html # Main webpage
-├── resume.pdf # Resume download link
-├── /images # Profile and project images
-├── /icons # SVG icons used in the layout
-└── README.md # Project documentation
-
-yaml
-Copy code
+| Technology       | Purpose                          |
+| ---------------- | -------------------------------- |
+| **HTML5**        | Structure and content            |
+| **Tailwind CSS** | Styling and layout               |
+| **FormSubmit**   | Handles contact form submissions |
 
 ---
 
