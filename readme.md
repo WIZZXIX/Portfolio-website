@@ -46,7 +46,7 @@ Copy code
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/WIZZXIX/portfolio-website.git
    Navigate to the project directory:
    ```
 
@@ -60,34 +60,10 @@ Copy code
 index.html
 (You can just double-click it too)
 
-To make edits, open the project in VS Code or any text editor.
-
-🧠 Customization Guide
-Profile Picture → Replace Screenshot 2025-09-25 145207.png with your own.
-
-Resume → Replace resume.pdf with your updated resume file.
-
-GitHub Links → Update project links under the My Projects section.
-
-Email in Contact Form → Replace YOUR_EMAIL_HERE with your actual email address in the <form> action attribute.
-
-Form Redirect → Update the \_next URL to redirect users after submitting the form.
-
-📸 Preview
-
-💡 Future Enhancements
-🌓 Add dark/light mode toggle
-
-✨ Add smooth scroll animations
-
-🌍 Host website using GitHub Pages or Vercel
-
-💬 Add testimonials or blog section
-
 📬 Contact
 If you'd like to get in touch:
 
 👤 Suchit Manthen
 📍 Mumbai, India
-📧 your-email@example.com
+📧 suchitmanthen@gmail.com
 🔗 LinkedIn • GitHub
